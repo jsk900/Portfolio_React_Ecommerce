@@ -5,26 +5,17 @@ import Logo from './Logo';
 
 const Nav = () => {
   const context = useContext(MyContext);
-  const { loginData, cartItems, logoutHandler } = context;
+  const { cartItems } = context;
 
   return (
     <header>
       <Logo />
       <h3>
-        Welcome {loginData.username} to <span>Sally's</span> Cocktail Bar
+        Welcome to <span>Sally's</span> Cocktail Bar
       </h3>
       <ul>
         <NavLink
-          onClick={logoutHandler}
           to='/'
-          style={({ isActive }) => {
-            return { color: isActive && 'green' };
-          }}>
-          <li>Logout</li>
-        </NavLink>
-
-        <NavLink
-          to='/products'
           style={({ isActive }) => {
             return { color: isActive && 'green' };
           }}>

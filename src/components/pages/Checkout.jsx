@@ -22,7 +22,7 @@ const Checkout = () => {
         <Nav />
         <section className='cart-no-items'>
           <p>There are no items in your cart to order</p>
-          <button onClick={() => navigate('/products')}>Return</button>
+          <button onClick={() => navigate('/')}>Return</button>
         </section>
       </main>
     );
@@ -63,7 +63,7 @@ const Checkout = () => {
           <Link to='/orderPlaced'>
             <button>Place your order</button>
           </Link>
-          <button onClick={() => navigate('/products')}>Return</button>
+          <button onClick={() => navigate('/')}>Return</button>
         </aside>
       </section>
     </main>

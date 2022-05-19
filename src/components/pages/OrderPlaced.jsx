@@ -18,7 +18,7 @@ const OrderPlaced = () => {
       <Nav />
       <section className='orders-placed'>
         <p>Order Placed</p>
-        <button onClick={() => navigate('/products', { replace: true })}>
+        <button onClick={() => navigate('/', { replace: true })}>
           Carry on shopping
         </button>
       </section>
